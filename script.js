@@ -8,7 +8,7 @@ async function fetchQuote() {
   authorText.style.opacity = 0;
 
   try {
-    const response = await fetch('http://localhost:3000/quote');
+    const response = await fetch('https://zenquotes.io/api/random');
     const data = await response.json();
 
     quoteText.innerText = `"${data.content}"`;
