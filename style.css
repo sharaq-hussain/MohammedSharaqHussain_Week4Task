@@ -1,0 +1,97 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Full-screen background */
+body, html {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #ff6ec4, #7873f5);
+  color: #fff;
+}
+
+/* Container */
+.container {
+  background: rgba(0, 0, 0, 0.3); /* slightly transparent */
+  border-radius: 15px;
+  padding: 40px 30px;
+  max-width: 600px;
+  width: 90%;
+  text-align: center;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+}
+
+/* Quote text */
+#quote {
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+  line-height: 1.4;
+}
+
+/* Author text */
+#author {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  font-style: italic;
+}
+
+/* Buttons */
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+#new-quote {
+  background-color: #ff7300;
+  color: #fff;
+}
+
+#tweet-quote {
+  background-color: #1DA1F2;
+  color: #fff;
+}
+
+button:hover {
+  transform: translateY(-2px);
+}
+
+/* Responsive text */
+@media (max-width: 600px) {
+  #quote {
+    font-size: 1.3rem;
+  }
+  #author {
+    font-size: 1rem;
+  }
+  .container {
+    padding: 30px 20px;
+  }
+}
+
+#title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  letter-spacing: 1px;
+}
+
